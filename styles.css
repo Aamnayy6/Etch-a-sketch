@@ -5,10 +5,12 @@ html{
     font-size: large;
     font-weight: bold;
     font-family: "Bellota Text";
- 
 }
 body{
     text-align: center;
+    background-image: linear-gradient(to bottom right, #392270, #E9275B);
+    max-width: 100%;
+    height: auto;
 }
 #grid{
    
