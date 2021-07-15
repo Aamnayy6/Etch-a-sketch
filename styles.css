@@ -1,0 +1,77 @@
+h1{
+    text-align: center;
+    
+}
+html{
+    font-size: large;
+    font-weight: bold;
+    font-family: "Bellota Text", cursive;
+  background-image: linear-gradient(to bottom right, #392270, #E9275B);
+}
+#grid{
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    border: 10px solid black;
+    box-shadow: 0 0 5px rgb(243, 21, 158);
+    margin-left: 25rem;
+}
+.square{
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgb(243, 21, 158);
+    background-color:white;
+ }
+ .slider{
+     margin-left: 2rem;
+ }
+ .set-color{
+     background-color: black;
+ }
+ .color-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin: 1rem;
+}
+.option{
+    margin:1rem;
+    border:2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(243, 21, 158) inset;
+    text-shadow: 0 0 7px white;
+    font-family: inherit;
+    transition: all 0.2s;
+    padding: 8px;
+    
+}
+.transition{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgb(243, 21, 158);
+}
+.range{
+   
+    margin-left: 32rem;
+    -webkit-appearance: none;
+    width: 15%;
+    height: 15px;
+    background: black;
+    outline: none;
+    border-radius: 7px;
+    box-shadow: 0 0 2px rgb(243, 21, 158);
+}
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background:rgb(243, 21, 158);
+    border-radius: 50%;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+}

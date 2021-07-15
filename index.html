@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Etch a Sketch</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Etch A Sketch</h1>
+        </header>
+        <div>
+            <p>
+                Click to begin coloring! Use the slider to adjust grid size.
+            </p>
+        </div>
+        <div class="color-buttons">
+        <button class="option" id="white" onclick="changecolor(this)">Eraser</button>
+        <button class="option" id="blue" onclick="changecolor(this)">Blue</button>
+        <button class="option" id="rainbow" onclick="changecolor(this)">Rainbow</button>
+        <button class="option" id="black" onclick="changecolor(this)">Black</button>
+        <button class="option" id="clear" onclick="changecolor(this)">Clear</button>
+    </div>
+        <div id="grid"></div>
+        <div class="grid-size">
+           
+            <p class="slider">16</p>
+            <input class="range" type="range" min="1" max="100" value="16" onchange="updateval(this.value)"></input>
+             <p>Grid Size </p>
+        </div >
+        <script src="script.js"></script>
+    </body>
+</html>
