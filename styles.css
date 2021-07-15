@@ -9,13 +9,14 @@ html{
   background-image: linear-gradient(to bottom right, #392270, #E9275B);
 }
 #grid{
-    height: 400px;
-    width: 400px;
+   
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     border: 10px solid black;
     box-shadow: 0 0 5px rgb(243, 21, 158);
-    margin-left: 25rem;
+    max-width: 400px;
+    min-height: 400px;
+    margin: 2rem auto;
 }
 .square{
     flex: 1; 
