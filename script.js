@@ -8,18 +8,12 @@ for(i=0; i<num*num;i++)
     square.classList.add('square');
     grid.setAttribute("style", `grid-template-columns: repeat(${num}, 1fr);`);
     grid.insertAdjacentElement('beforeend', square);
-    const sqaures=document.querySelectorAll('.square');
-    const startgrid = document.getElementById("grid");
-    startgrid.addEventListener('click', ()=>{
-sqaures.forEach(square => {
     square.addEventListener('mouseenter', ()=>{
         if(pixelcolor=="rainbow")
         {
             square.style.backgroundColor=rainbowgenerator();
         }
         square.style.backgroundColor=pixelcolor;
-    })
-});
 })
 }
 }
