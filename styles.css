@@ -1,12 +1,14 @@
 h1{
     text-align: center;
-    
 }
 html{
     font-size: large;
     font-weight: bold;
-    font-family: "Bellota Text", cursive;
+    font-family: "Bellota Text";
   background-image: linear-gradient(to bottom right, #392270, #E9275B);
+}
+body{
+    text-align: center;
 }
 #grid{
    
@@ -18,11 +20,7 @@ html{
     min-height: 400px;
     margin: 2rem auto;
 }
-.square{
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.square{ 
     border: 1px solid rgb(243, 21, 158);
     background-color:white;
  }
@@ -32,21 +30,16 @@ html{
  .set-color{
      background-color: black;
  }
- .color-buttons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-     margin: 1rem;
-}
+
 .option{
-    margin:1rem;
+    margin:0.5rem;
     border:2px solid black;
     border-radius: 5px;
     box-shadow: 0 0 5px rgb(243, 21, 158) inset;
     text-shadow: 0 0 7px white;
     font-family: inherit;
     transition: all 0.2s;
-    padding: 8px;
+    padding: 0.5rem;
     
 }
 .transition{
@@ -54,8 +47,6 @@ html{
     box-shadow: 0 0 5px rgb(243, 21, 158);
 }
 .range{
-   
-    margin-left: 32rem;
     -webkit-appearance: none;
     width: 15%;
     height: 15px;
@@ -72,7 +63,4 @@ html{
     background:rgb(243, 21, 158);
     border-radius: 50%;
     cursor: pointer;
-}
-p{
-    text-align: center;
 }
