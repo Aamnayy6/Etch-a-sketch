@@ -15,13 +15,6 @@ for(i=0; i<num*num;i++)
         }
         square.style.backgroundColor=pixelcolor;
 })
-square.addEventListener('touchstart', ()=>{
-    if(pixelcolor=="rainbow")
-    {
-        square.style.backgroundColor=rainbowgenerator();
-    }
-    square.style.backgroundColor=pixelcolor;
-})
 }
 }
 function removetransition(e)
